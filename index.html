@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function Temperature(deg) {
+      this.deg = deg;
+
+      this.toK = function() {
+          return (this.deg + 273.15) / 274.15;
+      }
+
+      this.toF = function() {
+          return (this.deg * 9)/5 + 32;
+      }
+  }
+
+  let temp = new Temperature(25);
+  document.write("Result in K: " + temp.toK() + "<br>"  + "Result in F: " + temp.toF());
+
+</script>
+</body>
+</html>
